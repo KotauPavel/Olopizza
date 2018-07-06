@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Rank</th>
+      <th scope="col">Toppings</th>
+      <th scope="col">Number of Orders</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pizza of pizzas; let rank = index">
+      <th scope="row">{{rank+1}}</th>
+      <td>{{pizza.toppings}}</td>
+      <td>{{pizza.OrdersCount}}</td>
+    </tr>    
+  </tbody>
+</table>
